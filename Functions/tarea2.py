@@ -51,7 +51,7 @@ print(volumen_cono(4,2))
 
 # Ejercicio 3
 
-def sumarMayorMenor(a, b, c, d, e):
+def sumar_mayor_menor(a, b, c, d, e):
     mayor = None
     menor = None
     if(a > b and a > c and a > d and a > e):
@@ -80,12 +80,12 @@ def sumarMayorMenor(a, b, c, d, e):
     
     return suma
 
-print(sumarMayorMenor(6, 9, 7, 2, 3))
+print(sumar_mayor_menor(6, 9, 7, 2, 3))
 
 
 # Ejercicio 4
 
-def determinarCuadrante(x, y):
+def determinar_cuadrante(x, y):
     cuadrante = None
 
     if (x >= 1 and y >= 1):
@@ -99,35 +99,35 @@ def determinarCuadrante(x, y):
 
     return cuadrante
 
-print(determinarCuadrante(-1, 1))
+print(determinar_cuadrante(-1, 1))
 
 
 # Ejercicio 5
 
 # Se usó el ejercicio 4 para evaluar cada punto en los cuadrantes
 
-def cuantosEnCuadrante (x1, y1, x2, y2, x3, y3, x4, y4, c):
+def cuantos_en_cuadrante (x1, y1, x2, y2, x3, y3, x4, y4, c):
     contador = 0
 
-    if determinarCuadrante(x1, y1) == c:
+    if determinar_cuadrante(x1, y1) == c:
         contador = contador + 1
-    if determinarCuadrante(x2, y2) == c:
+    if determinar_cuadrante(x2, y2) == c:
         contador = contador + 1
-    if determinarCuadrante(x3, y3) == c:
+    if determinar_cuadrante(x3, y3) == c:
         contador = contador + 1
-    if determinarCuadrante(x4, y4) == c:
+    if determinar_cuadrante(x4, y4) == c:
         contador = contador + 1
     
     return contador
 
 
 #print(cuantosEnCuadrante(2, 3.4, 3, 1, -2.1, -3, -4, 1, 1))
-print(cuantosEnCuadrante (2, 3.4, 3, 1, -2.1, -3, -4, 1, 3))
+print(cuantos_en_cuadrante (2, 3.4, 3, 1, -2.1, -3, -4, 1, 3))
 
 
 # Ejercicio 6
    
-def tienePoquer (a, b, c, d, e):
+def tiene_poquer (a, b, c, d, e):
     ans = None
     if a == b == c == d:
         ans = True
@@ -146,12 +146,12 @@ def tienePoquer (a, b, c, d, e):
     
     return ans
     
-print(tienePoquer ("A", "2", "2", "2", "Q"))
+print(tiene_poquer ("A", "2", "2", "2", "Q"))
 
 
 # Ejercicio 7
 
-def jugadoresTenis (jugador1, jugador2):
+def jugadores_tenis (jugador1, jugador2):
     ans = None
     jugador1N = "jugador 1 harold"
     jugador2N = "jugador 2 david"
@@ -180,7 +180,7 @@ def jugadoresTenis (jugador1, jugador2):
     
     return ans
 
-print(jugadoresTenis (7, 4))
+print(jugadores_tenis (7, 4))
 
 
 # Ejercicio 8
